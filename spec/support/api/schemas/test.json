@@ -1,0 +1,67 @@
+{
+  "type": "object",
+  "required": ["data"],
+  "properties": {
+    "data" : {
+      "type" : "object",
+      "required": [
+        "id",
+        "type",
+        "attributes"
+      ],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string" },
+        "attributes": { 
+          "type": "object",
+          "required": [
+            "id",
+            "name",
+            "description",
+            "total_questions",
+            "questions"
+          ],
+          "properties": {
+            "id": { "type": "integer" },
+            "name": { "type": "string" },
+            "description": { "type": "string" },
+            "total_questions": { "type": "integer" },
+            "questions": { 
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": [
+                  "id",
+                  "name",
+                  "description",
+                  "answers"
+                ],
+                "properties": {
+                  "id": { "type": "integer" },
+                  "name": { "type": "string" },
+                  "description": { "type": "string" },
+                  "answers": { 
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "required": [
+                        "id",
+                        "description",
+                        "is_correct"
+                      ],
+                      "properties": {
+                        "id": {"type": "integer"},
+                        "description": { "type": "string" },
+                        "is_correct": { "type": "boolean" }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

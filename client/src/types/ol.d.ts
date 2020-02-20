@@ -1,0 +1,16 @@
+declare module 'ol/index';
+declare module 'ol/geom';
+declare module 'ol/layer/Tile';
+declare module 'ol/source/Stamen';
+declare module 'ol/style';
+declare module 'ol/render';
+declare module 'ol/proj';
+declare module 'ol/easing';
+declare module 'ol/source';
+declare module 'ol/layer/WebGLPoints';
+declare module 'ol/format/GeoJSON';
+declare module 'ol/source/Vector';
+declare module 'ol/source/TileJSON';
+declare module 'ol/geom/Point';
+declare module 'ol/layer';
+declare module 'ol/Feature';
