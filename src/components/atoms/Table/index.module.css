@@ -1,0 +1,142 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page_item {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 0;
+  cursor: pointer;
+}
+
+.page_item button {
+  cursor: pointer;
+}
+
+.page_item button.disabled {
+  cursor: not-allowed;
+}
+
+.page_link {
+  display: inline-block;
+  padding: 8px 16px;
+  color: #333;
+  text-decoration: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+
+.page_link:hover {
+  border-color: #1890ff;
+}
+
+.active .page_link {
+  border-color: #1890ff;
+  font-weight: bold;
+  color: #1890ff;
+}
+
+.arrow_left,
+.arrow_right {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid transparent;
+  border-bottom: 4px solid transparent;
+}
+
+.arrow_left {
+  border-right: 6px solid #d9d9d9;
+  margin-right: 4px;
+}
+
+.arrow_right {
+  border-left: 6px solid #d9d9d9;
+  margin-left: 4px;
+}
+
+.ellipsis {
+  cursor: not-allowed;
+}
+
+.ellipsis .page_link {
+  border: none;
+}
+
+.select_wrapper {
+  position: relative;
+  width: 120px;
+  z-index: 1;
+}
+
+.select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.selected_value {
+  font-size: 14px;
+  color: #333;
+}
+
+.dropdown_icon {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 4px 4px 0 4px;
+  border-color: #333 transparent transparent transparent;
+}
+
+.options {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-top: none;
+  border-radius: 4px;
+  display: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.option {
+  padding: 8px 12px;
+  font-size: 14px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+}
+
+.option:hover {
+  background-color: #f5f5f5;
+}
+
+.hidden_select {
+  display: none;
+}
+
+/* Show options when user clicks on select */
+.select_wrapper:hover .options {
+  display: block;
+  transform-origin: top;
+  transform: translateY(calc(-100%));
+}

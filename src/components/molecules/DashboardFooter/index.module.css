@@ -1,0 +1,31 @@
+.molecule {
+  width: 100%;
+  height: auto;
+}
+.box_2 {
+  flex-direction: row;
+  background-color: rgb(0, 21, 41);
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  padding: 32px 0px 32px 0px;
+}
+.box_4 {
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.molecule_3 {
+  height: auto;
+}
+.box_6 {
+  background-color: rgba(0, 0, 0, 0);
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 12px 0px 0px 0px;
+}

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ .Values.name }}-cm
+  namespace: {{ .Values.namespace }}
+data:
+  NODE_ENV: production
+  TZ: 'Asia/Tokyo'
+  API_URL: {{ .Values.API_URL }}
+  NEXTAUTH_URL: {{ .Values.NEXTAUTH_URL }}
+  NEXTAUTH_SECRET: '{{ .Values.NEXTAUTH_SECRET }}'
+  NEXT_PUBLIC_API_URL: {{ .Values.NEXT_PUBLIC_API_URL }}

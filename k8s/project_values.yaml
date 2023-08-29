@@ -1,0 +1,14 @@
+deployment:
+  image: "aimvector/python"
+  tag: "1.0.4"
+ENV: "staging"
+name: "nextjs-5740"
+namespace: "production-preview"
+DOMAIN: "frontend-5740.preview.jitera.app"
+GIT_TOKEN: "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"
+ECR_URL: "194773096141.dkr.ecr.ap-northeast-1.amazonaws.com"
+IMAGE_TAG: "v57401693324406"
+API_URL: "https://frontend-5740.preview.jitera.app"
+NEXTAUTH_URL: 'http://localhost:3000'
+NEXTAUTH_SECRET: 'SecretHere'
+NEXT_PUBLIC_API_URL: "https://api-5740.preview.jitera.app"
